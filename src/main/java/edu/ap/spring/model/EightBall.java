@@ -1,5 +1,6 @@
 package edu.ap.spring.model;
 import org.springframework.stereotype.Component;
+import java.util.Random;
 
 @Component
 public class EightBall {
@@ -15,7 +16,10 @@ public class EightBall {
 	
 	public String getRandomAnswer(String question) {
 		String answer = "";
-
+			int questionID = question.hashCode();
+			Random rando = new Random();
+			int random = rando.nextInt(9);
+			answer = answers[random];
 		return answer;
 	}
 
