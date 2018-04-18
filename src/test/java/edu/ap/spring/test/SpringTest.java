@@ -1,15 +1,18 @@
 package edu.ap.spring.test;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import edu.ap.spring.jpa.*;
+
+import edu.ap.spring.jpa.Question;
+import edu.ap.spring.jpa.QuestionRepository;
 import edu.ap.spring.model.EightBall;
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
